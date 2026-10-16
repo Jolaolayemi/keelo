@@ -382,3 +382,14 @@ input{font:inherit;color:inherit;border:0;background:none;outline:none;width:100
 .brand-logo{display:block;height:40px;width:auto}
 .about-mark{display:inline-block;width:15px;height:15px;vertical-align:-2px;margin-right:6px}
 .w-brand{position:absolute;left:36px;top:104px;height:24px;width:auto;animation:fadeIn .6s var(--ease) both .2s}
+
+/* fit: the trade CTA always sits above the tab bar (Oct 16) */
+.pad:has(> .t-tabs) > div:first-child{margin-top:10px!important}
+.t-tabs{margin-top:14px}
+.t-coin{margin-top:12px}
+.t-meta{margin-top:8px}
+.chart{height:184px}
+.t-act{margin-top:12px}
+.t-form .field{margin-top:12px}
+.t-hint{margin-top:8px}
+.t-go{margin-top:12px}
