@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Keelo · Demo crypto wallet app · Designed by Olayemi</title>
+<meta name="description" content="Keelo is a demo crypto wallet app designed by Olayemi: track your coins, buy and sell, send and receive. Simulated prices, no real money.">
+<meta property="og:title" content="Keelo · Demo crypto wallet app">
+<meta property="og:description" content="Demo build designed by Olayemi. Track coins, buy and sell, send and receive. Simulated prices, no real money.">
+<meta property="og:image" content="https://keelo-demo.sites.tab.bot/assets/og.jpg?v=3">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/inter-400-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/app.css?v=4">
+</head>
+<body>
+<div class="desk">
+  <aside class="desk-copy desk-left">
+    <div class="brand"><img class="brand-logo" src="assets/brand/keelo_logo_color_on_dark.svg?v=1" alt="Keelo" width="138" height="40"></div>
+    <p class="desk-lede">A crypto wallet that keeps your coins close and easy to read.</p>
+    <p class="desk-tag">Demo build · Designed by Olayemi</p>
+  </aside>
+  <div class="phone" id="phone">
+    <div class="app" id="app" aria-live="polite">
+      <div class="sbar" aria-hidden="true"><span class="sbar-time">9:41</span><span class="sbar-island"></span><span class="sbar-icons" data-icons="signal-solid wifi-solid battery-full-solid"></span></div>
+      <div class="stage" id="stage"></div>
+      <nav class="nav" id="nav" aria-label="Main">
+        <span class="nav-ind" id="navInd" aria-hidden="true"><i></i></span>
+        <a href="#/home" data-tab="home" aria-label="Home"></a>
+        <a href="#/trade" data-tab="trade" aria-label="Trade"></a>
+        <a href="#/portfolio" data-tab="portfolio" aria-label="Portfolio"></a>
+        <a href="#/activity" data-tab="activity" aria-label="Activity"></a>
+        <a href="#/profile" data-tab="profile" aria-label="Profile and settings"></a>
+      </nav>
+      <div class="sheet-wrap" id="sheet" hidden><div class="sheet-scrim" data-close></div><div class="sheet" role="dialog" aria-modal="true"></div></div>
+      <div class="toast" id="toast" role="status"></div>
+    </div>
+  </div>
+  <aside class="desk-copy desk-right">
+    <p class="desk-k">Try it</p>
+    <ul class="desk-list">
+      <li>Sign in with anything</li>
+      <li>Open a coin, drag the chart</li>
+      <li>Buy, sell, send and receive</li>
+      <li>Everything saves in this browser</li>
+    </ul>
+    <p class="desk-note">Demo · simulated prices · no real wallet or money</p>
+  </aside>
+</div>
+<script src="assets/data.js?v=5"></script>
+<script src="assets/app.js?v=4"></script>
+</body>
+</html>
