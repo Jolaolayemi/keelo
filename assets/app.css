@@ -47,14 +47,14 @@ input{font:inherit;color:inherit;border:0;background:none;outline:none;width:100
   .phone{width:100%;height:100vh;height:100dvh;border-radius:0;box-shadow:none}
   .app{border-radius:0}
   .sbar{display:none}
-  .screen{padding-top:max(14px,env(safe-area-inset-top))}
-  .welcome{padding-top:0}
 }
 
 /* ---------- stage & screens ---------- */
 .stage{position:absolute;inset:0}
 .screen{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;background:#fff;scrollbar-width:none;padding-top:max(50px,env(safe-area-inset-top))}
 .screen::-webkit-scrollbar{display:none}
+/* phone-size viewports: no drawn status bar, so the screen only clears the real safe area (the base 50px rule above used to override this) */
+@media (max-width:500px){.screen{padding-top:max(12px,env(safe-area-inset-top))}.welcome{padding-top:0}}
 .screen.has-nav{padding-bottom:calc(var(--nav-h) + 24px + env(safe-area-inset-bottom))}
 .screen.dark{background:#000;color:#fff}
 .screen.enter{animation:inR .46s var(--ease) both}
