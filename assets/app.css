@@ -55,6 +55,8 @@ input{font:inherit;color:inherit;border:0;background:none;outline:none;width:100
 .screen::-webkit-scrollbar{display:none}
 /* phone-size viewports: no drawn status bar, so the screen only clears the real safe area (the base 50px rule above used to override this) */
 @media (max-width:500px){.screen{padding-top:max(4px,env(safe-area-inset-top))}.welcome{padding-top:0}}
+/* phone-size welcome: the canvas is drawn in full-screen design coordinates (0–844 incl. the status-bar zone). Below the status bar it was pushed 47px down, cropping Get Started at the bottom edge — pull it back up by up to 47px so the CTA keeps its designed bottom spacing */
+@media (max-width:500px){.welcome .w-canvas{margin-top:clamp(-47px,calc(100vh - 844px),0px);margin-top:clamp(-47px,calc(100dvh - 844px),0px)}}
 .screen.has-nav{padding-bottom:calc(var(--nav-h) + 24px + env(safe-area-inset-bottom))}
 .screen.dark{background:#000;color:#fff}
 .screen.enter{animation:inR .46s var(--ease) both}
